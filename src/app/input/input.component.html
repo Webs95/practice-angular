@@ -1,6 +1,7 @@
-<form action="#">
-    <input type="text" [(ngModel)]="someText">
-    <button type="submit">Submit</button>
-</form>
+<div class="input-container">
+  <div class="text-wrapper">
+    <h3>{{ someText }}</h3>
+  </div>
 
-<span>{{someText}}</span>
+  <input type="text" (input)="handleInput($event)" [ngModel]="someText" />
+</div>
