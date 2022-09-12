@@ -4,7 +4,7 @@
     <li class="list-item" *ngFor="let passanger of passangers; let i = index">
       <div
         class="status"
-        [ngClass]="{ 'status_checked-in': passanger.checkedIn }"
+        [style.backgroundColor]="(passanger.checkedIn ? 'green' : 'red')"
       ></div>
       {{ i + 1 }}: {{ passanger.name }}
     </li>
