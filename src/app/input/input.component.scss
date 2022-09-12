@@ -2,7 +2,7 @@
   height: 30vh;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -13,4 +13,8 @@
   border-radius: 5px;
   background-color: rgb(25, 25, 25);
   color: azure;
+}
+
+.list {
+  list-style: none;
 }

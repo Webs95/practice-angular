@@ -1,7 +1,8 @@
 <div class="input-container">
-  <div class="text-wrapper">
-    <h3>{{ someText }}</h3>
-  </div>
-  <button (click)="handleClick(username.value)">Get value</button>
-  <input type="text" #username/>
+  <h3>Passangers:</h3>
+  <ul class="list">
+    <li *ngFor="let passanger of passangers; let i = index">
+      {{ i + 1 }}: {{ passanger.name }}
+    </li>
+  </ul>
 </div>
