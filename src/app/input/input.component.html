@@ -1,7 +1,11 @@
 <div class="input-container">
   <h3>Passangers:</h3>
   <ul class="list">
-    <li *ngFor="let passanger of passangers; let i = index">
+    <li class="list-item" *ngFor="let passanger of passangers; let i = index">
+      <div
+        class="status"
+        [ngClass]="{ 'status_checked-in': passanger.checkedIn }"
+      ></div>
       {{ i + 1 }}: {{ passanger.name }}
     </li>
   </ul>
