@@ -2,6 +2,6 @@
   <div class="text-wrapper">
     <h3>{{ someText }}</h3>
   </div>
-
-  <input type="text" (input)="handleInput($event)" [ngModel]="someText" />
+  <button (click)="handleClick(username.value)">Get value</button>
+  <input type="text" #username/>
 </div>

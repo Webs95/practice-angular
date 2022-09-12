@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class InputComponent implements OnInit {
   public someText: string = '';
 
-  handleInput(event: any) {
-    this.someText = event.target.value
+  handleClick(value: string) {
+    this.someText = value;
   }
 
   ngOnInit(): void {}
