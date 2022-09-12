@@ -2,7 +2,7 @@
   height: 30vh;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -13,4 +13,24 @@
   border-radius: 5px;
   background-color: rgb(25, 25, 25);
   color: azure;
+}
+
+.list {
+  list-style: none;
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  background: rgb(183, 20, 20);
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid black;
+  &_checked-in {
+    background-color: rgb(46, 131, 46);
+  }
 }

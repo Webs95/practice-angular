@@ -1,7 +1,12 @@
 <div class="input-container">
-  <div class="text-wrapper">
-    <h3>{{ someText }}</h3>
-  </div>
-
-  <input type="text" (input)="handleInput($event)" [ngModel]="someText" />
+  <h3>Passangers:</h3>
+  <ul class="list">
+    <li class="list-item" *ngFor="let passanger of passangers; let i = index">
+      <div
+        class="status"
+        [style.backgroundColor]="(passanger.checkedIn ? 'green' : 'red')"
+      ></div>
+      {{ i + 1 }}: {{ passanger.name }}
+    </li>
+  </ul>
 </div>
