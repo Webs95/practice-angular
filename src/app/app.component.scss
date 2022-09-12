@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(10, 10, 117), white, rgb(248, 64, 31));
+}
+
+h1 {
+  font-size: 40px;
+  text-shadow: 3px 3px rgba(71, 67, 67, 0.324);
+}
