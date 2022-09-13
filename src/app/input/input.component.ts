@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Passanger from '../interface/passangers';
+import Passanger from '../../assets/interface/passangers';
 
 
 @Component({
