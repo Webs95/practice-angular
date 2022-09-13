@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Passanger from '../interface/passangers';
 
+
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
@@ -12,26 +13,36 @@ export class InputComponent implements OnInit {
       id: 1,
       name: 'Alex',
       checkedIn: true,
+      checkedInDate: 134560000,
+      children: [{name: 'Alice', age: 13}]
     },
     {
       id: 2,
       name: 'Iryna',
       checkedIn: true,
+      checkedInDate: 384560000,
+      children: [{name: 'Alice', age: 13}]
     },
     {
       id: 3,
       name: 'Nadejda',
       checkedIn: false,
+      checkedInDate: null,
+      children: [{name: 'Sofia', age: 7}]
     },
     {
       id: 4,
       name: 'Pavel',
       checkedIn: true,
+      checkedInDate: 238560000,
+      children: [{name: 'Fedor', age: 14}]
     },
     {
       id: 5,
       name: 'Helen',
       checkedIn: false,
+      checkedInDate: null,
+      children: null
     },
   ];
 

@@ -6,13 +6,9 @@ import { InputComponent } from './input/input.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [
-    AppComponent,
-    InputComponent
-  ],
+  declarations: [AppComponent, InputComponent],
   bootstrap: [AppComponent],
   exports: [],
-  providers: []
+  providers: [],
 })
-
 export class AppModule {}
