@@ -1,7 +1,7 @@
 <div class="input-container">
   <div class="text-wrapper">
-    <h3>{{ someText }}</h3>
+    <h3 *ngIf="username.value === data">{{ someText }}</h3>
   </div>
-  <button (click)="handleClick(username.value)">Get value</button>
-  <input type="text" #username/>
+  <!-- <button (click)="handleClick(username.value)">Get value</button> -->
+  <input (input)="handleInput(username.value)" type="text" #username/>
 </div>

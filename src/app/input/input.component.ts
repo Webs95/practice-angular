@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
   public someText: string = '';
+  data: string = 'Alex';
 
-  handleClick(value: string) {
+  handleInput(value: string) {
     this.someText = value;
   }
 
