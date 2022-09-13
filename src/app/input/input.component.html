@@ -4,9 +4,19 @@
     <li class="list-item" *ngFor="let passanger of passangers; let i = index">
       <div
         class="status"
-        [style.backgroundColor]="(passanger.checkedIn ? 'green' : 'red')"
+        [ngStyle]="{ backgroundColor: passanger.checkedIn ? 'green' : 'red' }"
       ></div>
       {{ i + 1 }}: {{ passanger.name }}
+      <p [ngStyle]="{ marginLeft: '5px' }">
+        {{
+          passanger.checkedInDate
+            ? (passanger.checkedInDate | date: "yMMMMd")
+            : "Not Checked In"
+        }}
+      </p>
+      <div [ngStyle]="{ marginLeft: '10px' }" class="children">
+        Children: {{ passanger.children?.length || 0 }}
+      </div>
     </li>
   </ul>
 </div>
