@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { InputComponent } from './input/input.component';
-import { PassangerDashboardComponent } from './passanger-dashboard/passanger-dashboard.component';
+import { PassangerDashboardModule } from './passanger-dashboard/passanger-dashboard.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, InputComponent, PassangerDashboardComponent],
+  imports: [BrowserModule, FormsModule, PassangerDashboardModule],
+  declarations: [AppComponent, InputComponent],
   bootstrap: [AppComponent],
   exports: [],
   providers: [],
