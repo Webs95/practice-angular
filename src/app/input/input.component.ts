@@ -46,10 +46,10 @@ export class InputComponent implements OnInit {
     },
   ];
 
-  someText: string = '';
+  someString: string = '';
 
-  handleChange(e: any) {
-    this.someText = e.target.value;
+  onChange(value: any) {
+    this.someString = value.target.value;
   }
 
   ngOnInit(): void {}

@@ -1,22 +1,13 @@
 <div class="input-container">
   <h3>Passangers:</h3>
-  <ul class="list">
-    <li class="list-item" *ngFor="let passanger of passangers; let i = index">
-      <div
-        class="status"
-        [ngStyle]="{ backgroundColor: passanger.checkedIn ? 'green' : 'red' }"
-      ></div>
-      {{ i + 1 }}: {{ passanger.name }}
-      <p [ngStyle]="{ marginLeft: '5px' }">
-        {{
-          passanger.checkedInDate
-            ? (passanger.checkedInDate | date: "yMMMMd")
-            : "Not Checked In"
-        }}
-      </p>
-      <div [ngStyle]="{ marginLeft: '10px' }" class="children">
-        Children: {{ passanger.children?.length || 0 }}
-      </div>
-    </li>
-  </ul>
+  <div class="list-container" *ngFor="let passanger of passangers">
+    <ul>
+      <li>
+        <p>{{ passanger.id }}</p>
+        <p>{{ passanger.name }}</p>
+      </li>
+    </ul>
+  </div>
+  <p [textContent]="someString"></p>
+  <input type="text" (input)="onChange($event)"/>
 </div>
